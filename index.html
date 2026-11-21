@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intangible Cultural Heritage - Timeless Legacy</title>
+    <link rel="stylesheet" href='css/style.css'>
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="bg-image active"></div>
+        <div class="bg-image"></div>
+        <div class="bg-image"></div>
+        <div class="bg-image"></div>
+    </div>
+
+    <div class="bg-overlay"></div>
+
+    <div class="pattern-overlay"></div>
+
+    <div class="corner-decoration top-left"></div>
+    <div class="corner-decoration top-right"></div>
+    <div class="corner-decoration bottom-left"></div>
+    <div class="corner-decoration bottom-right"></div>
+
+    <div class="main-title">
+        <h1>PAPER CUTTING</h1>
+        <div class="divider"></div>
+        <p>INTANGIBLE<br>CULTURAL<br>HERITAGE</p>
+    </div>
+
+    <div class="glow-ring"></div>
+
+    <div class="donut-container">
+        <div class="outer-ring"></div>
+
+        <div class="indicator"></div>
+
+        <div class="donut-wheel" id="donutWheel">
+            <svg class="donut-svg" viewBox="0 0 400 400">
+                <defs>
+                    <filter id="bevel" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur" />
+                        <feSpecularLighting in="blur" surfaceScale="3" specularConstant="0.6" specularExponent="20"
+                            lighting-color="#fff" result="specOut">
+                            <fePointLight x="-5000" y="-10000" z="10000" />
+                        </feSpecularLighting>
+                        <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+                        <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1"
+                            k4="0" />
+                    </filter>
+
+                    <pattern id="img0" patternUnits="userSpaceOnUse" width="400" height="400">
+                        <image xlink:href="img/1.png" y="0" width="400" height="400" preserveAspectRatio="xMidYMid slice" />
+                    </pattern>
+
+                    <pattern id="img1" patternUnits="userSpaceOnUse" width="400" height="400">
+                        <image href="img/2.png" width="400" height="400" preserveAspectRatio="xMidYMid slice" />
+                    </pattern>
+
+                    <pattern id="img2" patternUnits="userSpaceOnUse" width="400" height="400">
+                        <image href="img/3.png" y="0" width="400" height="400" preserveAspectRatio="xMidYMid slice" />
+                    </pattern>
+
+                    <pattern id="img3" patternUnits="userSpaceOnUse" width="400" height="400">
+                        <image href="img/4.png" y="0" width="400" height="400" preserveAspectRatio="xMidYMid slice" />
+                    </pattern>
+
+                    <linearGradient id="highlight" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:rgba(255,255,255,0.25)" />
+                        <stop offset="50%" style="stop-color:rgba(255,255,255,0.02)" />
+                        <stop offset="100%" style="stop-color:rgba(255,255,255,0.1)" />
+                    </linearGradient>
+
+                    <linearGradient id="edge" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:rgba(212,175,55,0.8)" />
+                        <stop offset="50%" style="stop-color:rgba(212,175,55,0.3)" />
+                        <stop offset="100%" style="stop-color:rgba(212,175,55,0.7)" />
+                    </linearGradient>
+
+                    <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feComponentTransfer in="SourceAlpha">
+                            <feFuncA type="table" tableValues="1 0" />
+                        </feComponentTransfer>
+                        <feGaussianBlur stdDeviation="3" />
+                        <feOffset dx="2" dy="2" result="offsetblur" />
+                        <feFlood flood-color="rgba(0,0,0,0.5)" result="color" />
+                        <feComposite in2="offsetblur" operator="in" />
+                        <feComposite in2="SourceAlpha" operator="in" />
+                        <feMerge>
+                            <feMergeNode in="SourceGraphic" />
+                            <feMergeNode />
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <g class="segments" id="segments"></g>
+            </svg>
+        </div>
+
+        <div class="center-circle">
+            <div class="center-content">
+                <div class="center-title" id="centerTitle">Paper Cutting</div>
+                <div class="center-subtitle" id="centerSubtitle">Select</div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/style.js"></script>
+</body>
+
+</html>

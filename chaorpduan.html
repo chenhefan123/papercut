@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Video Highlights</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="css/chaorpduan.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container">
+        <div class="nav-wrapper" id="mobileNav">
+            <nav class="nav">
+                <a href="index.html" class="nav-item">Entry</a>
+                <a href="jies.html" class="nav-item">Home</a>
+                <a href="chaorpduan.html" class="nav-item">Highlights</a>
+                <a href="qiyuan.html" class="nav-item">Origin</a>
+                <a href="long.html" class="nav-item">Login</a>
+            </nav>
+        </div>
+
+        <section class="video-section">
+            <div class="video-title">
+                <h1>Highlights</h1>
+                <p>A thousand-year craft at your fingertips · Paper cutting brought to life on screen</p>
+            </div>
+
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <div class="video-poster" id="videoPoster">
+                        <div class="play-button"></div>
+                        <p class="poster-text">Click to Play</p>
+                    </div>
+
+                    <video id="mainVideo" controls preload="metadata" poster="./img/video-poster.jpg">
+                        <source src="vd/vd1.mp4" type="video/mp4">
+                        <source src="vd/vd1.mp4" type="video/webm">
+                        Your browser does not support video playback
+                    </video>
+
+
+                </div>
+                <div class="video-decoration"></div>
+            </div>
+        </section>
+    </div>
+
+<script src="js/chaorpduan.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Paper-Cutting Art</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/long.css">
+</head>
+
+<body>
+    <a href="index.html" class="back-btn" id="backBtn">
+        <i class="fas fa-arrow-left"></i>
+        <span>Back</span>
+    </a>
+
+    <div class="paper-cut-bg"></div>
+
+    <div class="corner-decoration corner-top-left">
+        <svg viewBox="0 0 100 100">
+            <path
+                d="M0,0 L100,0 L100,20 C60,20 20,60 20,100 L0,100 Z M30,30 Q50,50 30,70 Q50,50 70,70 Q50,50 70,30 Q50,50 30,30 Z" />
+        </svg>
+    </div>
+    <div class="corner-decoration corner-top-right">
+        <svg viewBox="0 0 100 100">
+            <path
+                d="M0,0 L100,0 L100,20 C60,20 20,60 20,100 L0,100 Z M30,30 Q50,50 30,70 Q50,50 70,70 Q50,50 70,30 Q50,50 30,30 Z" />
+        </svg>
+    </div>
+    <div class="corner-decoration corner-bottom-left">
+        <svg viewBox="0 0 100 100">
+            <path
+                d="M0,0 L100,0 L100,20 C60,20 20,60 20,100 L0,100 Z M30,30 Q50,50 30,70 Q50,50 70,70 Q50,50 70,30 Q50,50 30,30 Z" />
+        </svg>
+    </div>
+    <div class="corner-decoration corner-bottom-right">
+        <svg viewBox="0 0 100 100">
+            <path
+                d="M0,0 L100,0 L100,20 C60,20 20,60 20,100 L0,100 Z M30,30 Q50,50 30,70 Q50,50 70,70 Q50,50 70,30 Q50,50 30,30 Z" />
+        </svg>
+    </div>
+
+    <div class="falling-petals">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+    </div>
+
+    <div class="window-flower window-flower-1"></div>
+    <div class="window-flower window-flower-2"></div>
+
+    <div class="main-content">
+        <div class="logo-container">
+            <div class="logo-icon"></div>
+        </div>
+        <h2>Chinese Paper-Cutting Art</h2>
+        <p class="subtitle">A thousand years of intangible cultural heritage<br>One sheet of paper, one pair of scissors — a world of infinite forms</p>
+        <p class="english-subtitle">Chinese Paper-Cutting Art · Intangible Cultural Heritage</p>
+        <button class="open-modal-btn">
+            <i class="fas fa-door-open"></i>Enter the Gallery of Art
+        </button>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="dahezi">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <form id="loginForm">
+                <h1>Welcome Back</h1>
+                <div class="hez1">
+                    <input type="text" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="hez1">
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+                <div class="form-footer">
+                    <p>No account yet? <a href="#" id="registerLink">Register Now</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="success-message" id="successMessage">
+        <h3>Signed In Successfully</h3>
+        <p>Welcome back, <span id="welcomeUser">admin</span></p>
+    </div>
+</body>
+
+
+<script src="js/long.js"></script>
+
+</html>
